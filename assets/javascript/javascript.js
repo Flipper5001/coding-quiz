@@ -126,6 +126,7 @@ const startTimer = function(){
 }
 
 let localHighscores = [];
+// generate highscores from local storage
 function loadHighscores(){
     highscoresEl.textContent = "";
     let storedHighscores = JSON.parse(localStorage.getItem("highscores"));
@@ -140,7 +141,7 @@ function loadHighscores(){
     highscoresEl.appendChild(h1);
     
     localHighscores.sort((a, b) => b.timeLeft - a.timeLeft)
-    
+
     for (let i = 0; i < localHighscores.length; i++) {
         const localHighs = localHighscores[i];
         
