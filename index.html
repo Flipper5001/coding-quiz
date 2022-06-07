@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/helper.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Coding Quiz</title>
+</head>
+<body class="background">
+    <!-- Coding quiz title -->
+    <h1 class="title text-center ma-2">Coding Quiz</h1>
+    <section class="header text-center px-5p mb-2">
+        <!-- small description -->
+        <section class="description">
+            <p class="pa-2">This will be a short test of your coding knowledge.</p>
+            <p class="pa-2">Keep in mind the timer as you go through the quiz.</p>
+            <p class="pa-2">Any incorrect answers will result in time being lost!</p>
+        </section>
+        <section class="flex-center-column">
+            <!-- start button -->
+            <button id="start" class="button">Start</button>
+            <!-- view highscores button -->
+            <button id="highscores" class="button my-2">Highscores</button>
+        </section>
+    </section>
+    <section class="quiz text-center flex-center-column">
+        <!-- question section -->
+        <section class="qna container hide">
+            <!-- timer -->
+            <h2 class="mt-5">Time Left:</h2>
+            <section class="timer mt-1"></section>
+            <section class="question-title mt-2">Question</section>
+            <section class="answers flex-center-column my-5">
+                <button class="answer"></button>
+                <button class="answer"></button>
+                <button class="answer"></button>
+                <button class="answer"></button>
+            </section>
+        </section>
+        <!-- highscores section -->
+        <section class="endscreen hide mt-5">
+            <h1 class="heading">That's the end!</h1>
+            <h3 class="mt-1 fontsize-24">So, how'd you stack up?</h3>
+            <h1 class="mt-5 mb-2 fontsize-24">Score: <span class="result"></span></h1>
+            <!-- form for name -->
+            <form id="initials">
+                <!-- enter initals can be placed in an input -->
+                <input type="text" placeholder="Initials Here" id="userInputInitials">
+                <!-- submit button for highscore -->
+                <button id="record" class="button" type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="highscore-container container hide">
+            <section class="highscores text-center flex-center-column my-5"></section>
+            <section class="endbuttons text-center my-5 hide">
+                <button id="restart" class="answer mt-2">Restart</button>
+                <button id="clear" class="answer mt-10">Clear Highscores</button>
+            </section>
+        </section>
+    </section>
+    
+    <script src="./assets/javascript/question.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+</body>
+</html>
