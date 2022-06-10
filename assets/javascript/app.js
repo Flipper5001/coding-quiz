@@ -173,6 +173,7 @@ startBtn.addEventListener("click", function(){
     startTimer();
 });
 
+// when highscores button clicked
 highScoresBtn.addEventListener("click", function(){
     show(highscoreContainerEl);
     loadHighscores();
