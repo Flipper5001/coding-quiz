@@ -1,6 +1,6 @@
 # Module 4 - Coding Quiz
 ## Description
-Create a custom quiz of a certain topic utilising HTML, CSS and JS practices.
+Create a custom quiz of a certain topic utilising HTML, CSS and JS practices to evaluate your knowledge base.
 
 ## Table of Contents
 1. [Visuals](#visuals) 
