@@ -135,6 +135,7 @@ function loadHighscores(){
         localHighscores = storedHighscores
     }
 
+    // create highscore title
     const h1 = document.createElement("h1");
     h1.textContent = "Highscores"
     h1.setAttribute("class", "heading")
@@ -142,6 +143,7 @@ function loadHighscores(){
     
     localHighscores.sort((a, b) => b.timeLeft - a.timeLeft)
 
+    // create scores
     for (let i = 0; i < localHighscores.length; i++) {
         const localHighs = localHighscores[i];
         
